@@ -5,32 +5,16 @@ games = []
 for line in inputFile:
     games.append(line.split())
 
+scores = {
+        "A": { "X": 3, "Y": 4, "Z": 8},
+        "B": { "X": 1, "Y": 5, "Z": 9},
+        "C": { "X": 2, "Y": 6, "Z": 7}
+    }
+
 total = 0
 
 for i in range(len(games)):
-    
-    if games[i][0] == "A":
-        if games[i][1] == "X":
-            total += 3
-        elif games[i][1] == "Y":
-            total += 4
-        elif games[i][1] == "Z":
-            total += 8
 
-    elif games[i][0] == "B":
-        if games[i][1] == "X":
-            total += 1
-        elif games[i][1] == "Y":
-            total += 5
-        elif games[i][1] == "Z":
-            total += 9
-
-    elif games[i][0] == "C":
-        if games[i][1] == "X":
-            total += 2
-        elif games[i][1] == "Y":
-            total += 6
-        elif games[i][1] == "Z":
-            total += 7
+    total += scores[games[i][0]][games[i][1]]
 
 print(total)
