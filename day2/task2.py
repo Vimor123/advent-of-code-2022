@@ -5,6 +5,8 @@ games = []
 for line in inputFile:
     games.append(line.split())
 
+inputFile.close()
+
 scores = {
         "A": { "X": 3, "Y": 4, "Z": 8},
         "B": { "X": 1, "Y": 5, "Z": 9},

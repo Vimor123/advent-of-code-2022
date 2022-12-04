@@ -8,6 +8,8 @@ for line in inputFile:
     secondCompartment = rucksack[(len(rucksack)//2):]
     rucksacks.append([firstCompartment, secondCompartment])
 
+inputFile.close()
+
 total = 0
 
 for rucksack in rucksacks:

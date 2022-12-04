@@ -11,4 +11,6 @@ for line in inputFile:
     else:
         caloriesByElf[elfIndex] += int(line)
 
+inputFile.close()
+
 print(max(caloriesByElf))

@@ -11,6 +11,8 @@ for line in inputFile:
     else:
         caloriesByElf[elfIndex] += int(line)
 
+inputFile.close()
+
 total = 0
 for i in range(3):
     maxCalories = max(caloriesByElf)

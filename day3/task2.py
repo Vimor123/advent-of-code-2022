@@ -12,6 +12,8 @@ for line in inputFile:
     groups[groupIndex].append(line[:-1])
     groupMemberIndex += 1
 
+inputFile.close()
+
 total = 0
 
 for group in groups:
